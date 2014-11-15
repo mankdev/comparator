@@ -5,29 +5,9 @@
 	<title>Comparator</title>
 
 	<link rel="stylesheet" href="inc/css/main.css"/>
-
-	<script id="loaderTpl" type="text/x-handlebars-template">
-		<input class="loader--url" type="text"/><button class="loader--button">load</button>
-	</script>
 </head>
-<body>
-<section class="comparator">
-	<div class="columns">
-		<div class="columns--column columns--column-1_2">
-			<div class="loader" data-loader="first"></div>
-		</div><!--
-	 --><div class="columns--column columns--column-1_2">
-			<div class="loader" data-loader="second"></div>
-		</div>
-	</div>
-
-	<button class="comparator--process">compare</button>
-
-	<div class="comparator--result">
-
-	</div>
-</section>
-
+<body data-ng-app="comparator">
+<section screenshot-loader></section>
 
 <script src="inc/js/build.js"></script>
 </body>
